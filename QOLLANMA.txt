@@ -1,0 +1,89 @@
+ZIYOFAT CHOYXONASI SAYTI — QISQA QO'LLANMA
+==========================================
+
+LOGOTIP
+  images/logo.png — dumaloq logotip (sayt tepasi, kirish animatsiyasi, footer).
+  images/favicon.png — brauzer yorlig'idagi kichik belgi.
+  Kirish animatsiyasi har safar chiqadi, so'ng 1-bo'lim ochiladi. Birinchi kirishda
+  o'z tezligida (~6 soniya), sahifa yangilanganda tezroq (~3 soniya).
+
+TELEGRAM VA SMS
+  Telegram'da username yo'q, shuning uchun "Telegram" tugmasi raqam orqali
+  chat ochadi (t.me/+998888012422) va buyurtma matnini nusxalaydi — mijoz
+  uni chatga joylaydi. Username ochsangiz, data.js dagi  telegram: ""  ga
+  yozing — shunda buyurtma matni avtomatik yozilgan holda ochiladi.
+  "SMS" tugmasi telefonda tayyor buyurtma matni bilan SMS oynasini ochadi.
+
+SAYTNI OCHISH
+  index.html faylini ikki marta bosing — brauzerda ochiladi.
+
+NIMANI QAYERDAN O'ZGARTIRAMAN?
+  Taomlar, narxlar, manzillar, telefonlar:   js/data.js
+  Tugma va sarlavhalardagi yozuvlar:         js/i18n.js
+  Faylni Bloknot (Notepad) bilan oching: fayl ustida o'ng tugma ->
+  "Открыть с помощью" -> Блокнот.
+
+  data.js ichida:
+  1) Telefon, Telegram, Instagram  — yuqoridagi "ALOQA" bo'limi
+  2) Manzil, ish vaqti, xaritadagi nuqta   — "MANZIL" bo'limi
+  3) Taom nomi, tarkibi, narxi     — "MENYU" bo'limi
+
+  O'zgartirgach saqlang (Ctrl + S) va brauzerda sahifani yangilang (F5).
+
+UCH TIL (O'ZBEKCHA, RUSCHA, INGLIZCHA)
+  Har bir matn uch tilda yoziladi:
+      nom: { uz: "Tandir somsa", ru: "Тандыр-самса", en: "Tandoor samsa" },
+  uz — o'zbekcha, ru — ruscha, en — inglizcha. Keraklisini o'zgartiring.
+  Tarjimasi bo'lmasa, bitta matn yozsangiz ham bo'ladi:
+      nom: "Tandir somsa",
+  — u uchala tilda ham shunday chiqadi.
+
+  Sayt birinchi marta o'zbek tilida ochiladi. Mijoz tilni almashtirsa,
+  tanlovi eslab qolinadi.
+  Rus tilida ochiladigan havola:      saytingiz.uz/?lang=ru
+  Ingliz tilida ochiladigan havola:   saytingiz.uz/?lang=en
+  (masalan, Yandex Maps'ga ruscha havolani qo'yishingiz mumkin)
+
+YORUG' VA QORONG'I REJIM
+  Sayt qorong'i rejimda ochiladi. Yuqoridagi quyosh/oy tugmasi rejimni
+  almashtiradi (telefonda — uch chiziqli menyu ichida). Tanlov eslab qolinadi.
+  Ranglarni o'zgartirish: css/style.css faylining eng boshidagi ikki bo'lim.
+
+NARXNI O'ZGARTIRISH
+  narx: 12000   ->   narx: 14000
+  Faqat son yoziladi, bo'sh joy va "so'm" so'zisiz.
+
+YANGI TAOM QO'SHISH
+  Kerakli bo'limdagi bitta taomni to'liq nusxalang
+  (  {  dan boshlab  },  gacha ), ostiga qo'ying va ichidagi nom, tavsif,
+  narxni o'zgartiring.
+
+TAOMNI O'CHIRISH
+  O'sha taomning  {  dan  },  gacha bo'lgan qismini to'liq o'chirib tashlang.
+
+O'LCHOV
+  "1 dona", "1 kosa", "1 portsiya", "1 six", "300 g", "1 litr", "1 choynak"
+  ko'rinishida yozing — ruscha va inglizchaga o'zi o'giriladi.
+
+O'Z RASMINGIZNI QO'YISH
+  1. Rasmni  images  papkasiga tashlang (masalan: osh.jpg).
+  2. data.js da o'sha taomning   img: rasm("...")   qismini
+     img: "images/osh.jpg"   ga almashtiring.
+  Rasm eni kamida 900 piksel bo'lsa, chiroyli chiqadi.
+
+XARITADAGI NUQTANI TO'G'RILASH
+  Google Maps'da oshxonangiz ustiga sichqonchaning o'ng tugmasini bosing.
+  Tepada ikki son chiqadi, masalan: 38.879264, 65.816324
+  Birinchisi — lat, ikkinchisi — lng. Shularni data.js ga yozing.
+
+BUYURTMALAR QAYERGA KELADI?
+  Mijoz savatni to'ldirib "Telegram orqali buyurtma berish" ni bossa,
+  data.js dagi  telegram: "..."  (yoki raqam) orqali Telegram chatga tayyor
+  buyurtma matni bilan yozadi. Shu yerga o'z Telegram nomingizni qo'ying.
+  Mijoz rus yoki ingliz tilida buyurtma bersa ham, har bir taomning
+  o'zbekcha nomi qavs ichida yozib qo'yiladi.
+
+SAYTNI INTERNETGA QO'YISH
+  Hosting va domen (masalan ziyofat.uz) kerak bo'ladi.
+  Hostingga quyidagilarni yuklaysiz: index.html, css, js, images.
+  (.claude papkasi va shu QOLLANMA.txt kerak emas.)

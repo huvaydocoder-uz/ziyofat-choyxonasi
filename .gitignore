@@ -1,0 +1,15 @@
+# Lokal ishlab chiqish sozlamalari (Claude Code preview serveri)
+.claude/
+
+# Operatsion tizim va muharrir fayllari
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Vaqtinchalik fayllar
+*.tmp
+*.log
+node_modules/

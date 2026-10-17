@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="uz" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ziyofat Choyxonasi — Qarshidagi milliy taomlar choyxonasi | Osh, somsa, shashlik</title>
+  <meta name="description" content="Ziyofat — haqiqiy o'zbekona mehmondo'stlik maskani. Qarshida osh, tandir somsa, shashlik, qozon kabob va choy. Menyu, narxlar, manzil va buyurtma. Ish vaqti 08:00–23:00.">
+  <meta name="keywords" content="Ziyofat, Ziyofat choyxonasi, choyxona Qarshi, osh Qarshi, tandir somsa, shashlik, qozon kabob, чайхана Карши, плов Карши, Uzbek food Qarshi">
+  <meta name="theme-color" content="#170d06">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ziyofat Choyxonasi">
+  <meta property="og:title" content="Ziyofat Choyxonasi — haqiqiy o'zbekona mehmondo'stlik maskani">
+  <meta property="og:description" content="Osh, tandir somsa, shashlik va qaynoq choy. Qarshi, Eco Oil zapravkasi ro'parasi. Har kuni 08:00–23:00.">
+  <meta property="og:image" content="images/logo.png">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Manrope:wght@400..800&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    // Sahifa chizilishidan oldin saqlangan rejimni (yorug' / qorong'i) qo'llaymiz
+    // Kirish animatsiyasi (splash) har safar — sahifa yangilanganda ham — ko'rsatiladi,
+    // so'ng sayt doim 1-bo'limdan (eng tepadan) ochiladi
+    (function () {
+      var d = document.documentElement, t = null;
+      d.classList.add('js', 'splash-on');
+      try { t = localStorage.getItem('ziyofat-mavzu'); } catch (e) {}
+      d.dataset.theme = t === 'light' ? 'light' : 'dark';
+      if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    })();
+  </script>
+</head>
+<body>
+
+<!-- Ikonkalar va bayroqlar to'plami -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+  <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24"><path d="m3 11 19-9-9 19-2-8-8-2z"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4 20-7z"/></symbol>
+  <symbol id="i-sms" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 10h.01M12 10h.01M16 10h.01"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+  <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><path d="m9.75 15.02 5.75-3.27-5.75-3.27v6.54z"/></symbol>
+  <symbol id="i-flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+
+  <!-- Bayroqlar -->
+  <symbol id="f-uz" viewBox="0 0 30 30">
+    <rect width="30" height="10" fill="#0099b5"/><rect y="10" width="30" height="10" fill="#fff"/><rect y="20" width="30" height="10" fill="#1eb53a"/>
+    <rect y="9.3" width="30" height="1.4" fill="#ce1126"/><rect y="19.3" width="30" height="1.4" fill="#ce1126"/>
+    <circle cx="10" cy="5.6" r="3.3" fill="#fff"/><circle cx="11.3" cy="5.6" r="2.9" fill="#0099b5"/>
+    <g fill="#fff"><circle cx="15" cy="3.4" r=".75"/><circle cx="17.6" cy="3.4" r=".75"/><circle cx="20.2" cy="3.4" r=".75"/><circle cx="15" cy="6.2" r=".75"/><circle cx="17.6" cy="6.2" r=".75"/><circle cx="20.2" cy="6.2" r=".75"/></g>
+  </symbol>
+  <symbol id="f-ru" viewBox="0 0 30 30">
+    <rect width="30" height="10" fill="#fff"/><rect y="10" width="30" height="10" fill="#0039a6"/><rect y="20" width="30" height="10" fill="#d52b1e"/>
+  </symbol>
+  <symbol id="f-en" viewBox="0 0 30 30">
+    <rect width="30" height="30" fill="#012169"/>
+    <path d="M0 0l30 30M30 0L0 30" stroke="#fff" stroke-width="6"/>
+    <path d="M0 0l30 30M30 0L0 30" stroke="#c8102e" stroke-width="2"/>
+    <path d="M15 0v30M0 15h30" stroke="#fff" stroke-width="8"/>
+    <path d="M15 0v30M0 15h30" stroke="#c8102e" stroke-width="4.6"/>
+  </symbol>
+</svg>
+
+<!-- ============ KIRISH ANIMATSIYASI: logotip, choynakdan piyolaga choy quyilishi ============ -->
+<div class="splash" id="splash" aria-hidden="true">
+  <div class="splash__in">
+    <div class="splash__logo"><img src="images/logo.png" alt="" width="300" height="300"></div>
+
+    <svg class="splash__scene" viewBox="0 0 300 200" aria-hidden="true">
+      <defs>
+        <linearGradient id="sPot" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f6cbd"/><stop offset="1" stop-color="#14366a"/></linearGradient>
+        <linearGradient id="sGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6d996"/><stop offset=".5" stop-color="#d9a74a"/><stop offset="1" stop-color="#a26e1c"/></linearGradient>
+        <radialGradient id="sTea" cx=".45" cy=".4" r=".7"><stop offset="0" stop-color="#e09a4c"/><stop offset="1" stop-color="#8f4512"/></radialGradient>
+      </defs>
+
+      <ellipse cx="160" cy="193" rx="125" ry="5" fill="#000" opacity=".28"/>
+
+      <!-- Choy oqimi -->
+      <path class="sc-stream" d="M193 123 C 210 121, 233 128, 240 154" pathLength="1" fill="none" stroke="#c97a35" stroke-width="4.5" stroke-linecap="round"/>
+
+      <!-- Choynak -->
+      <g class="sc-pot">
+        <path d="M60 92 C 26 86, 26 132, 64 122" fill="none" stroke="url(#sGold)" stroke-width="7" stroke-linecap="round"/>
+        <path d="M128 110 C 146 106, 150 92, 162 80 L168 73 Q 175 72 174 79 L166 88 C 156 104, 150 120, 132 126 Z" fill="url(#sPot)" stroke="url(#sGold)" stroke-width="1.6"/>
+        <ellipse cx="95" cy="106" rx="42" ry="32" fill="url(#sPot)" stroke="url(#sGold)" stroke-width="2"/>
+        <path d="M95 91 C 106 99, 106 113, 95 123 C 84 113, 84 99, 95 91 Z" fill="#f7ebd3"/>
+        <path d="M95 97 C 100 102, 100 110, 95 116 C 90 110, 90 102, 95 97 Z" fill="url(#sGold)"/>
+        <path d="M66 108 C 74 98, 84 102, 86 110 M124 108 C 116 98, 106 102, 104 110" stroke="url(#sGold)" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <circle cx="70" cy="118" r="2" fill="url(#sGold)"/><circle cx="120" cy="118" r="2" fill="url(#sGold)"/>
+        <path d="M64 95 C 69 86, 77 80, 86 78" stroke="#fff" stroke-opacity=".35" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <ellipse cx="95" cy="80" rx="28" ry="6" fill="url(#sPot)" stroke="url(#sGold)" stroke-width="2.5"/>
+        <path d="M75 79 Q 95 52 115 79 Z" fill="url(#sPot)" stroke="url(#sGold)" stroke-width="2"/>
+        <circle cx="95" cy="56" r="5" fill="url(#sGold)"/>
+        <path d="M68 135 h54 l-5 7 h-44 z" fill="url(#sGold)"/>
+      </g>
+
+      <!-- Piyola -->
+      <g class="sc-cup">
+        <path d="M205 152 Q 209 186 240 187 Q 271 186 275 152 Z" fill="#fbf5ea"/>
+        <path d="M209 166 Q 240 178 271 166" stroke="#1f4f8f" stroke-width="3.5" fill="none"/>
+        <g fill="#2a8f95"><circle cx="222" cy="175" r="1.6"/><circle cx="240" cy="179" r="1.6"/><circle cx="258" cy="175" r="1.6"/></g>
+        <path d="M205 152 Q 209 186 240 187 Q 271 186 275 152" fill="none" stroke="url(#sGold)" stroke-width="2"/>
+        <ellipse cx="240" cy="152" rx="35" ry="6" fill="#e9dcc2" stroke="url(#sGold)" stroke-width="2"/>
+        <ellipse class="sc-tea" cx="240" cy="152.5" rx="31" ry="4.4" fill="url(#sTea)"/>
+        <rect x="228" y="186" width="24" height="5" rx="2" fill="url(#sGold)"/>
+      </g>
+
+      <!-- Bug' -->
+      <g class="sc-steam" fill="none" stroke="#f7ebd3" stroke-width="2.4" stroke-linecap="round">
+        <path d="M228 140 c -6 -8 6 -14 0 -24"/>
+        <path d="M241 136 c -6 -8 6 -14 0 -26"/>
+        <path d="M254 140 c -6 -8 6 -14 0 -24"/>
+      </g>
+    </svg>
+
+    <p class="splash__l1" id="splashL1"></p>
+    <p class="splash__l2" id="splashL2"></p>
+  </div>
+  <button class="splash__skip" type="button" id="splashSkip" data-tr="@splash.skip">O'tkazib yuborish</button>
+</div>
+
+<header class="hdr" id="hdr">
+  <div class="wrap hdr__in">
+    <a class="logo" href="#top" data-tr-aria="@a.home" aria-label="Ziyofat Choyxonasi — bosh sahifa">
+      <img src="images/logo.png" alt="" width="48" height="48">
+      <span>Ziyofat<small>Choyxonasi</small></span>
+    </a>
+
+    <nav class="nav" id="nav" data-tr-aria="@a.nav" aria-label="Asosiy menyu">
+      <a href="#xit" data-tr="@nav.hits">Xit taomlar</a>
+      <a href="#menyu" data-tr="@nav.menu">Menyu</a>
+      <a href="#biz" data-tr="@nav.about">Biz haqimizda</a>
+      <a href="#manzil" data-tr="@nav.branches">Manzil</a>
+      <a href="#aloqa" data-tr="@nav.contact">Aloqa</a>
+      <div class="nav__tools">
+        <button class="nav__theme" type="button" data-theme-toggle>
+          <span class="theme-ico"><svg class="i theme__sun"><use href="#i-sun"/></svg><svg class="i theme__moon"><use href="#i-moon"/></svg></span>
+          <span data-theme-label>Yorug' rejim</span>
+        </button>
+      </div>
+    </nav>
+
+    <a class="hdr__tel" data-tel href="#"><svg class="i"><use href="#i-phone"/></svg><span data-tel-text></span></a>
+
+    <!-- Til almashtirgich (bayroqchalar bilan) -->
+    <div class="lang" id="lang">
+      <button class="lang__cur" type="button" aria-expanded="false" data-tr-aria="@a.lang" aria-label="Tilni tanlash">
+        <span class="flag"><svg><use href="#f-uz" data-lang-flag/></svg></span>
+        <span data-lang-cur>UZ</span><svg class="i"><use href="#i-chevron"/></svg>
+      </button>
+      <div class="lang__list" role="group" data-tr-aria="@a.lang" aria-label="Tilni tanlash">
+        <span class="lang__thumb" aria-hidden="true"></span>
+        <button type="button" data-lang="uz" lang="uz" title="O'zbekcha" class="is-active"><span class="flag"><svg><use href="#f-uz"/></svg></span><span>UZ</span></button>
+        <button type="button" data-lang="ru" lang="ru" title="Русский"><span class="flag"><svg><use href="#f-ru"/></svg></span><span>RU</span></button>
+        <button type="button" data-lang="en" lang="en" title="English"><span class="flag"><svg><use href="#f-en"/></svg></span><span>EN</span></button>
+      </div>
+    </div>
+
+    <!-- Yorug' / qorong'i rejim -->
+    <button class="rbtn theme" type="button" data-theme-toggle aria-label="Yorug' rejim">
+      <svg class="i theme__sun"><use href="#i-sun"/></svg><svg class="i theme__moon"><use href="#i-moon"/></svg>
+    </button>
+
+    <button class="cartbtn" type="button" data-open-cart data-tr-aria="@a.cart" aria-label="Savatni ochish">
+      <svg class="i"><use href="#i-bag"/></svg>
+      <span data-tr="@cart">Savat</span>
+      <b data-count hidden>0</b>
+    </button>
+
+    <button class="burger" id="burger" type="button" data-tr-aria="@a.menu" aria-label="Menyuni ochish" aria-expanded="false" aria-controls="nav">
+      <svg class="i"><use href="#i-menu"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- Til almashganda tepada bayroq ranglaridagi chiziq yugurib o'tadi -->
+<div class="langfx" id="langfx" aria-hidden="true"></div>
+
+<main id="top">
+
+  <!-- ============ KATTA KARUSEL ============ -->
+  <section class="hero on-dark" id="hero" aria-roledescription="carousel">
+    <div class="hero__bg" id="heroBg"></div>
+
+    <div class="wrap hero__body">
+      <span class="kicker hero__kicker" data-tr="@hero.kicker">Ziyofat Choyxonasi · Qarshi</span>
+      <h1 class="hero__title" data-tr-html="@hero.title">Ziyofat — <em>haqiqiy o'zbekona mehmondo'stlik maskani</em></h1>
+      <div class="hero__texts" id="heroTexts"></div>
+      <div class="hero__cta">
+        <a class="btn btn--gold" href="#menyu"><span data-tr="@hero.menu">Menyu va narxlar</span> <svg class="i"><use href="#i-arrow-right"/></svg></a>
+        <a class="btn btn--ghost" href="#manzil"><svg class="i"><use href="#i-pin"/></svg> <span data-tr="@hero.map">Xaritada ko'rish</span></a>
+      </div>
+    </div>
+
+    <div class="wrap hero__bar">
+      <ul class="stats">
+        <li><b data-stat="taom">0</b><span data-tr-n="@stat.dishes" data-n="0">xil taom va ichimlik</span></li>
+        <li><b data-hours>08:00 – 23:00</b><span data-tr="@stat.daily">har kuni, dam olishsiz</span></li>
+        <li><b data-insta-count>13K+</b><span data-tr="@stat.insta">Instagram'dagi mehmonlarimiz</span></li>
+      </ul>
+      <div class="hero__ctrl">
+        <div class="hero__dots" id="heroDots"></div>
+        <button class="rbtn" type="button" id="heroPrev" data-tr-aria="@a.prev" aria-label="Oldingisi"><svg class="i"><use href="#i-arrow-left"/></svg></button>
+        <button class="rbtn" type="button" id="heroNext" data-tr-aria="@a.next" aria-label="Keyingisi"><svg class="i"><use href="#i-arrow-right"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ YUGURUVCHI QATOR ============ -->
+  <div class="marquee" aria-hidden="true"><div class="marquee__track" id="marquee"></div></div>
+
+  <!-- ============ XIT TAOMLAR KARUSELI ============ -->
+  <section class="sec hits" id="xit">
+    <div class="wrap">
+      <div class="shead shead--row" data-reveal>
+        <div>
+          <span class="kicker" data-tr="@hits.kicker">Mehmonlar tanlovi</span>
+          <h2 data-tr-html="@hits.title">Eng ko'p so'raladigan <em>xit taomlar</em></h2>
+        </div>
+        <div class="shead__ctrl">
+          <button class="rbtn" type="button" id="hitsPrev" data-tr-aria="@a.prev" aria-label="Oldingisi"><svg class="i"><use href="#i-arrow-left"/></svg></button>
+          <button class="rbtn" type="button" id="hitsNext" data-tr-aria="@a.next" aria-label="Keyingisi"><svg class="i"><use href="#i-arrow-right"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <div class="hits__track" id="hits" tabindex="0"></div>
+  </section>
+
+  <!-- ============ MENYU ============ -->
+  <section class="sec menu" id="menyu">
+    <div class="wrap">
+      <div class="shead" data-reveal>
+        <span class="kicker" data-tr="@menu.kicker">Menyu va narxlar</span>
+        <h2 data-tr-html="@menu.title">Bugun nima <em>yeymiz?</em></h2>
+        <p data-tr="@menu.lead">Har bir taomning tarkibi, o'lchovi va narxi ko'rsatilgan.</p>
+      </div>
+    </div>
+
+    <div class="chips" id="chipsBar">
+      <div class="wrap"><nav class="chips__in" id="chips" data-tr-aria="@nav.menu" aria-label="Menyu"></nav></div>
+    </div>
+
+    <div class="wrap" id="menuList"></div>
+  </section>
+
+  <!-- ============ BIZ HAQIMIZDA ============ -->
+  <section class="sec about" id="biz">
+    <div class="wrap about__in">
+      <div class="about__pics" data-reveal>
+        <div class="about__pic about__pic--a" data-media><img id="bizImg1" alt="Ziyofat Choyxonasi" loading="lazy"></div>
+        <div class="about__pic about__pic--b" data-media><img id="bizImg2" alt="" loading="lazy"></div>
+        <img class="about__logo" src="images/logo.png" alt="" loading="lazy" width="150" height="150">
+      </div>
+
+      <div class="about__text">
+        <div class="shead" data-reveal>
+          <span class="kicker" data-tr="@about.kicker">Biz haqimizda</span>
+          <h2 data-tr-html="@about.title">Ziyofat — bu <em>dasturxon atrofidagi</em> mehr</h2>
+          <p data-tr="@about.lead"></p>
+        </div>
+
+        <ul class="feats">
+          <li data-reveal style="--d:0ms"><span class="feats__i"><svg class="i"><use href="#i-flame"/></svg></span><div><h3 data-tr="@feat1.t"></h3><p data-tr="@feat1.d"></p></div></li>
+          <li data-reveal style="--d:80ms"><span class="feats__i"><svg class="i"><use href="#i-leaf"/></svg></span><div><h3 data-tr="@feat2.t"></h3><p data-tr="@feat2.d"></p></div></li>
+          <li data-reveal style="--d:160ms"><span class="feats__i"><svg class="i"><use href="#i-users"/></svg></span><div><h3 data-tr="@feat3.t"></h3><p data-tr="@feat3.d"></p></div></li>
+          <li data-reveal style="--d:240ms"><span class="feats__i"><svg class="i"><use href="#i-pin"/></svg></span><div><h3 data-tr="@feat4.t"></h3><p data-tr="@feat4.d"></p></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MANZIL VA XARITA (Yandex) ============ -->
+  <section class="sec fil" id="manzil">
+    <div class="wrap">
+      <div class="shead" data-reveal>
+        <span class="kicker" data-tr="@fil.kicker">Manzil</span>
+        <h2 data-tr-html="@fil.title">Bizni xaritadan <em>toping</em></h2>
+        <p data-tr="@fil.lead"></p>
+      </div>
+
+      <div class="fil__in" data-reveal>
+        <div class="fil__list" id="filList"></div>
+        <div class="map">
+          <iframe id="mapFrame" title="Yandex Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BUYURTMA BANNERI ============ -->
+  <section class="cta on-dark" id="aloqa">
+    <div class="cta__bg" data-media><img id="ctaImg" alt="" loading="lazy"></div>
+    <div class="wrap cta__in" data-reveal>
+      <span class="kicker" data-tr="@cta.kicker">Buyurtma va aloqa</span>
+      <h2 data-tr-html="@cta.title">Qorningiz ochdimi? <em>Hoziroq buyurtma bering</em></h2>
+      <p data-tr="@cta.lead"></p>
+      <div class="cta__btns">
+        <a class="btn btn--gold" data-tel href="#"><svg class="i"><use href="#i-phone"/></svg><span data-tel-text></span></a>
+        <a class="btn btn--tg" data-tg href="#" target="_blank" rel="noopener"><svg class="i"><use href="#i-send"/></svg><span data-tr="@cta.tg">Telegram'da yozish</span></a>
+        <a class="btn btn--sms" data-sms href="#"><svg class="i"><use href="#i-sms"/></svg><span data-tr="@cta.sms">SMS yuborish</span></a>
+        <button class="btn btn--ghost" type="button" data-open-cart><svg class="i"><use href="#i-bag"/></svg><span data-tr="@cta.cart">Savatni ochish</span></button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr on-dark">
+  <div class="wrap ftr__in">
+    <div class="ftr__brand">
+      <a class="logo" href="#top">
+        <img src="images/logo.png" alt="" width="48" height="48" loading="lazy">
+        <span>Ziyofat<small>Choyxonasi</small></span>
+      </a>
+      <p data-tr="@ftr.about"></p>
+      <div class="social" id="social"></div>
+    </div>
+
+    <div class="ftr__col">
+      <h3 data-tr="@ftr.page">Sahifa</h3>
+      <a href="#xit" data-tr="@nav.hits">Xit taomlar</a>
+      <a href="#menyu" data-tr="@ftr.menu">Menyu va narxlar</a>
+      <a href="#biz" data-tr="@nav.about">Biz haqimizda</a>
+      <a href="#manzil" data-tr="@nav.branches">Manzil</a>
+    </div>
+
+    <div class="ftr__col">
+      <h3 data-tr="@nav.branches">Manzil</h3>
+      <div id="ftrFil"></div>
+    </div>
+
+    <div class="ftr__col">
+      <h3 data-tr="@nav.contact">Aloqa</h3>
+      <a data-tel href="#"><span data-tel-text></span></a>
+      <a data-tg href="#" target="_blank" rel="noopener">Telegram</a>
+      <span><span data-tr="@ftr.hours">Ish vaqti:</span> <span data-hours></span></span>
+    </div>
+  </div>
+  <div class="wrap ftr__btm">
+    <span>© <span data-year></span> Ziyofat Choyxonasi. <span data-tr="@ftr.rights">Barcha huquqlar himoyalangan.</span></span>
+    <a href="#top" data-tr="@ftr.top">Yuqoriga ↑</a>
+  </div>
+</footer>
+
+<!-- ============ SAVAT ============ -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer__ov" data-close-cart></div>
+  <aside class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+    <header class="drawer__head">
+      <h2 id="cartTitle" data-tr="@cart">Savat</h2>
+      <button class="rbtn" type="button" data-close-cart data-tr-aria="@a.close" aria-label="Yopish"><svg class="i"><use href="#i-x"/></svg></button>
+    </header>
+
+    <div class="drawer__body">
+      <ul class="cart" id="cartList"></ul>
+
+      <form class="order" id="orderForm" hidden>
+        <fieldset>
+          <legend data-tr="@cart.type">Buyurtma turi</legend>
+          <div class="seg" id="orderType"></div>
+        </fieldset>
+        <label class="order__note">
+          <span data-tr="@cart.note">Izoh (ixtiyoriy)</span>
+          <textarea id="orderNote" rows="2" data-tr-ph="@cart.note.ph" placeholder=""></textarea>
+        </label>
+      </form>
+    </div>
+
+    <footer class="drawer__foot" id="cartFoot" hidden>
+      <div class="drawer__total"><span data-tr="@cart.total">Jami</span><b id="cartTotal">0</b></div>
+      <a class="btn btn--tg btn--full" id="orderTg" href="#" target="_blank" rel="noopener"><svg class="i"><use href="#i-send"/></svg><span data-tr="@cart.tg">Telegram orqali buyurtma</span></a>
+      <p class="drawer__hint" data-tr="@cart.tg.hint"></p>
+      <div class="drawer__row">
+        <a class="btn btn--sms" id="orderSms" href="#"><svg class="i"><use href="#i-sms"/></svg><span data-tr="@cart.sms">SMS orqali buyurtma</span></a>
+        <a class="btn btn--ghost" id="orderCall" href="#"><svg class="i"><use href="#i-phone"/></svg><span data-tr="@cart.call">Qo'ng'iroq qilib buyurtma</span></a>
+      </div>
+      <button class="drawer__clear" type="button" id="cartClear"><svg class="i"><use href="#i-trash"/></svg><span data-tr="@cart.clear">Savatni tozalash</span></button>
+    </footer>
+  </aside>
+</div>
+
+<button class="cartbar on-dark" id="cartbar" type="button" data-open-cart hidden>
+  <span class="cartbar__i"><svg class="i"><use href="#i-bag"/></svg><b data-count>0</b></span>
+  <span class="cartbar__t"><small data-tr="@bar.in">Savatda</small><b id="cartbarTotal">0</b></span>
+  <span class="cartbar__go"><span data-tr="@bar.go">Buyurtma berish</span> <svg class="i"><use href="#i-arrow-right"/></svg></span>
+</button>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<noscript><p style="padding:24px;text-align:center">Menyuni ko'rish uchun brauzeringizda JavaScript yoqilgan bo'lishi kerak.</p></noscript>
+
+<script src="js/data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
